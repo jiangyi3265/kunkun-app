@@ -1,0 +1,6 @@
+<template><view class="player-badges"><view v-if="realnameStatus==='VERIFIED'" class="player-badge verified"><AppIcon name="shield" :size="12" /><text>已实名</text></view><view v-if="shopStatus==='APPROVED'" class="player-badge shop"><AppIcon name="bag" :size="12" /><text>认证店铺</text></view><view v-if="showLevel" class="player-badge level"><text>Lv.{{level||1}}</text></view><view v-if="showMembership" class="player-badge membership" :class="{active:membershipActive}"><AppIcon v-if="membershipActive" name="star" :size="12" /><text>{{membershipActive?'会员':'非会员'}}</text></view></view></template>
+<script setup>
+import AppIcon from './AppIcon.vue'
+defineProps({realnameStatus:String,shopStatus:String,level:Number,membershipActive:Boolean,showLevel:Boolean,showMembership:Boolean})
+</script>
+<style scoped>.player-badges{display:flex;align-items:center;flex-wrap:wrap;gap:6px}.player-badge{display:inline-flex;align-items:center;gap:3px;border-radius:6px;padding:3px 6px;font-size:10px;line-height:1.3;white-space:nowrap}.verified{color:#167447;background:#e3f5e9}.shop{color:#665308;background:#fff3ad}.level,.membership{color:#656970;background:#f0f1f3}.membership.active{color:#6d5311;background:#fff0bb}</style>

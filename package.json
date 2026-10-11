@@ -1,0 +1,57 @@
+{
+  "name": "boost-market-miniapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:h5": "node scripts/uni.cjs -p h5",
+    "build:h5": "node scripts/uni.cjs build -p h5",
+    "dev:mp-weixin": "node scripts/uni.cjs -p mp-weixin",
+    "build:mp-weixin": "node scripts/uni.cjs build -p mp-weixin",
+    "lint": "node scripts/lint-mini.cjs",
+    "postinstall": "node scripts/apply-braces-hardening.cjs ."
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-5020620260917001",
+    "@dcloudio/uni-components": "3.0.0-5020620260917001",
+    "@dcloudio/uni-h5": "3.0.0-5020620260917001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-5020620260917001",
+    "vue": "3.5.43",
+    "vue-i18n": "9.14.5"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "3.4.31",
+    "@dcloudio/uni-cli-shared": "3.0.0-5020620260917001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-5020620260917001",
+    "@vue/runtime-core": "3.5.43",
+    "vite": "6.4.3",
+    "eslint": "9.39.5",
+    "eslint-plugin-vue": "10.11.1",
+    "globals": "16.5.0"
+  },
+  "overrides": {
+    "vite": "$vite",
+    "@intlify/core-base": "9.14.5",
+    "@intlify/shared": "9.14.5",
+    "@intlify/message-compiler": "9.14.5",
+    "@intlify/message-resolver": "9.1.11",
+    "@intlify/vue-devtools": "9.14.5",
+    "@babel/core": "7.29.7",
+    "adm-zip": "0.6.1",
+    "postcss": "8.5.28",
+    "postcss-selector-parser": "7.1.6",
+    "express": "4.22.3",
+    "body-parser": "1.20.8",
+    "cookie": "0.7.2",
+    "qs": "6.16.0",
+    "ws": "8.22.0",
+    "esbuild": "0.25.12",
+    "phin": "3.7.1",
+    "jpeg-js": "0.4.4",
+    "serve-static": "1.16.3",
+    "send": "0.19.0",
+    "path-to-regexp": "0.1.13",
+    "source-map-js": "1.2.2",
+    "vue": "3.5.43",
+    "@vue/server-renderer": "3.5.43"
+  }
+}

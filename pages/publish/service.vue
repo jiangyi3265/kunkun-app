@@ -1,0 +1,1 @@
+<template><PublishForm service :editing="id" /></template><script setup>import {ref} from 'vue';import {onLoad} from '@dcloudio/uni-app';import PublishForm from '../../components/PublishForm.vue';const id=ref('');onLoad(q=>id.value=q.id||'')</script>
